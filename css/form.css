@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: mintcream;
+  }
+  
+  #header {
+    position: fixed;
+    top: 3px;
+    left: 3px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: agency fb;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  #container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  #content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: auto;
+    border: 2px solid #252424;
+    border-radius: 20px;
+    background-color: #252424;
+    font-family: agency fb;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+  }
+  
+  
+  
+  h1, h4 {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  h4 {
+    font-size: 28px;
+  }
+  
+  .half-box {
+    text-align: center;
+    padding: 10px 80px;
+    
+  }
+  
+  .half-box label {
+    text-transform: uppercase;
+  }
+  
+  .half-box #name, #email, #lastname, #phone, #card, #scode {
+    text-align: center;
+    font-family: agency fb;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+    display: flex;
+    width: 300px;
+    padding: 10px;
+  }
+  
+  #box1, #box3, #box5 {
+    float: left;
+  }
+  
+  #button {
+    margin: 30px;
+    margin-right: 90px;
+    text-align: right;
+    
+  }
+  
+  #btn {
+    background-color: aliceblue;
+    padding: 10px 25px;
+    font-family: agency fb;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+  
+  }
+  

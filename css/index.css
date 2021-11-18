@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: mintcream;
+  }
+  
+  #navbar {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    display: flex;
+  }
+  
+  #hlog, #hreg {
+    padding: 10px;
+    margin-left: 10px;
+    width: 80px;
+    background-color: black;
+    font-size: 20px;
+    font-family: agency fb;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #hlog a, #hreg a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  #container {
+    width: auto;
+  }
+  
+  #content {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 10rem;
+    font-family: agency fb;
+    text-transform: uppercase;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-decoration: underline;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-family: agency fb;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+  }
+  
+  #hr {
+    background-color: #2D2D2D;
+    color: aliceblue;
+    text-transform: uppercase;
+  }
+  #title2 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-size: 60px;
+  }
+  
+  #p1 {
+    font-size: 40px;
+    margin: 100px;
+    text-align: center;
+    font-family: agency fb;
+  }
+  
+  #table {
+    display: flex;
+    text-align: center;
+  }
+  
+  #table h2 {
+    font-size: 35px;
+  }
+  
+  .img {
+    width: 400px;
+    height: 400px;
+  }
+  
+  #ibiza, #maldivas, #cancun {
+    color: aliceblue;
+    padding: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    background-color: #2D2D2D;
+    border-radius: 15px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
+  
+  #ibiza p, #maldivas p, #cancun p {
+    text-align: justify;
+    font-size: 20px;
+    padding: 20px 30px;
+    font-family: agency fb;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  
+  .dm {
+    text-align: center;
+    padding-top: 20px;
+    font-family: agency fb;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #67F6FC;
+  }
+  
+  footer {
+    background-color: #2D2D2D;
+    color: aliceblue;
+    padding: 15px 0;
+    margin-top: 200px;
+  }
+  

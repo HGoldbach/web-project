@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: mintcream;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#navbar {
+    position: fixed;
+    top: 3px;
+    left: 3px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: agency fb;
+    text-transform: uppercase;
+}
+
+#header {
+    color: white;
+    text-decoration: none;
+}
+
+#content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: auto;
+
+}
+
+#tw {
+    position: absolute;
+    top: 20%;
+    left: -150px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: agency fb;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#join {
+    font-size: 1.5rem;
+    font-family: agency fb;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    text-decoration: underline;
+    font-weight: 1000;
+    text-align: center;
+}
+
+#acess {
+    font-size: 1.0rem;
+    font-family: agency fb;
+    text-transform: uppercase;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-decoration: underline;
+    font-weight: 1000;
+    text-align: center; 
+}
+
+#register-form {
+    float: right;
+    border-left: 2px solid black;
+    padding: 30px 0;
+    padding-left: 100px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.form-group {
+    padding: 5px 0;
+}
+
+input, button {
+    padding: 7px;
+    width: 280px;
+}
+
+#error {
+    position: absolute;
+    top: -15px;
+    left: 67%;
+    color: #f18e8e;
+    background-color: #2D2D2D;
+    padding: 5px;
+    font-family: agency fb;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#suc1, #suc2 {
+    background-color: #2D2D2D;
+    padding: 5px;
+    font-family: agency fb;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+}
+
+#suc1 {
+    color: #58ff49;
+}
+
+#suc2 {
+    color: white;
+}
+
+#suc2 a {
+    color: #58ff49;
+}
+
+footer {
+    position: relative;
+    top: 1030px;
+    text-align: center;
+    background-color: #2D2D2D;
+    color: aliceblue;
+    padding: 15px 0;
+}

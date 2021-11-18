@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body  {
+    background-color: mintcream;
+  }
+  
+  h1  {
+    margin-top: 30px;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  #button {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 8rem;
+    font-family: agency fb;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    text-decoration: underline;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    font-family: agency fb;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  p {
+    font-family: agency fb;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  #thirdp {
+    margin: 5% 0;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  #btn {
+    margin-top: 20%;
+    margin-left: 45%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: agency fb;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  footer {
+    position: relative;
+    top: 187px;
+    text-align: center;
+    background-color: #2D2D2D;
+    color: aliceblue;
+    padding: 15px 0;
+  }
+  

@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: mintcream;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#navbar {
+    position: fixed;
+    top: 3px;
+    left: 3px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: agency fb;
+    text-transform: uppercase;
+}
+
+#header {
+    color: white;
+    text-decoration: none;
+}
+
+#content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: auto;
+
+}
+
+#tw {
+    position: absolute;
+    top: 20%;
+    left: -150px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: agency fb;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#logy {
+    font-size: 4.5rem;
+    position: absolute;
+    top: -400px;
+    left: -600px;
+    font-family: agency fb;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+
+#plog {
+    font-size: 1.8rem;
+    position: absolute;
+    top: -300px;
+    left: -600px;
+    font-family: agency fb;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#navbarl {
+    position: fixed;
+    top: 170px;
+    left: 650px;
+    background-color: black;
+    color: white;
+    padding: 10px 92px;
+    font-family: agency fb;
+    text-transform: uppercase;
+}
+
+#headerl {
+    color: white;
+    text-decoration: none;
+}
+
+#join {
+    font-size: 1.5rem;
+    font-family: agency fb;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    text-decoration: underline;
+    font-weight: 1000;
+    text-align: center;
+}
+
+#acess {
+    font-size: 1.0rem;
+    font-family: agency fb;
+    text-transform: uppercase;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-decoration: underline;
+    font-weight: 1000;
+    text-align: center; 
+}
+
+#register-form {
+    float: right;
+    border-left: 2px solid black;
+    padding: 30px 0;
+    padding-left: 100px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.form-group {
+    padding: 5px 0;
+}
+
+input, button {
+    padding: 7px;
+    width: 280px;
+}
+
+#error {
+    position: absolute;
+    top: -15px;
+    left: 70.5%;
+    color: #f18e8e;
+    background-color: #2D2D2D;
+    color: #f18e8e;
+    padding: 5px;
+    font-family: agency fb;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+footer {
+    position: relative;
+    top: 892px;
+    text-align: center;
+    background-color: #2D2D2D;
+    color: aliceblue;
+    padding: 15px 0;
+}
+
