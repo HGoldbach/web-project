@@ -14,24 +14,21 @@
     <title>Travel World</title>
 </head>
 <body>
+    <img class="header-img" src="./images/background.jpg" alt="">    
     <header>
         <nav class="navbar">
-            <?php if ($login): ?>
-                <div class="hlog">
-                    <a href="logout.php">Logout</a>
-                </div>
-            <?php else: ?>
-                <div class="hlog">
-                    <a href="login.php">Login</a> 
-                </div>
-                <div class="hreg">
-                    <a href="register.php">Registrar</a> 
-                </div>
-            <?php endif; ?>
+            <ul class="list-items">
+                <?php if ($login): ?>
+                    <li class="push-right"><a href="logout.php">Logout</a></li>
+                <?php else: ?>
+                    <li class="push-right"><a href="login.php">Login</a></li>
+                    <li><a href="register.php">Registrar</a></li>
+                <?php endif; ?>
+            </ul>
         </nav>
+        <h1>Travel World</h1>
     </header>
     <main>
-        <h1 id="title1">Travel World</h1>
         <div id="hr">
             <hr>
             <p id="p1"> 
@@ -43,7 +40,7 @@
         <h2 id="title2">Alguns de nossos destinos paradisíacos</h2>
         <section class="destinos">
             <div class="local ibiza">
-                <img src="images/ibiza.jpg">
+                <img class="img-destinos" src="images/ibiza.jpg">
                 <h3>Ibiza</h3> 
                 <p>
                     Localizada ao leste da Espanha, Ibiza é uma ilha do arquipélago
@@ -55,7 +52,7 @@
                 </button>
             </div>
             <div class="local maldivas">
-                <img  src="images/maldivashome2.jpg">
+                <img class="img-destinos" src="images/maldivashome2.jpg">
                 <h3>Maldivas</h3>
                 <p>
                     As Ilhas Maldivas são um arquipélago de 1.196 ilhas
@@ -67,7 +64,7 @@
                 </button>
             </div>
             <div class="local cancun">
-                <img src="images/cancun2.jpg">
+                <img class="img-destinos" src="images/cancun2.jpg">
                 <h3>Cancun</h3>
                 <p>
                     Cancún é um dos destinos mais famosos do México, com opções
