@@ -60,15 +60,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/login.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <title>Login</title>
+    <title>Travel World - Login</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <a class="header" href="index.php">Página Inicial</a> 
+            <ul class="list-items">
+                <li><a href="index.php">Página Inicial</a></li>
+            </ul>
         </nav>
     </header>
     <main>
+        <img src="./images/login.svg" alt="Imagem de login de uma mulher com montanhas e avião no fundo">
         <?php if ($login): ?>
             <h3 id="logy">Você já está logado!</h3>
             <p id="plog">Volte para página inicial!</p>
@@ -78,13 +81,11 @@
             </html>
             <?php exit(); ?>
         <?php endif; ?>
-        <div id="tw">
+        <section class="register-form">
+            <?php if ($error): ?>
+                <h3 id="error"><?php echo $error_msg; ?></h3>
+            <?php endif; ?>
             <h1>Travel World</h1>
-        </div>
-        <?php if ($error): ?>
-            <h3 id="error"><?php echo $error_msg; ?></h3>
-        <?php endif; ?>
-         <div id="register-form">
             <form action="login.php" method="post">
                 <h2>Entrar na Conta</h2>
                 <div class="form-group">
@@ -97,7 +98,7 @@
                 </div>
             </form>
             <p id="acess">Não possuí uma conta? <a href="register.php">CLIQUE AQUI!</a></p>
-        </div>
+        </section>
     </main>
     <footer>© Travel World</footer>
 </body>
