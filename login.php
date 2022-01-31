@@ -63,45 +63,42 @@
     <title>Login</title>
 </head>
 <body>
-    <div id="container">
+    <header>
+        <nav class="navbar">
+            <a class="header" href="index.php">Página Inicial</a> 
+        </nav>
+    </header>
+    <main>
         <?php if ($login): ?>
             <h3 id="logy">Você já está logado!</h3>
             <p id="plog">Volte para página inicial!</p>
-            <div id="navbarl">
-                <a id="headerl"href="index.php">Página Inicial</a> 
-            </div>
+            <a class="header" href="index.php">Página Inicial</a> 
+            </main>
             </body>
             </html>
             <?php exit(); ?>
         <?php endif; ?>
-        <div id="navbar">
-           <a id="header"href="index.php">Página Inicial</a> 
+        <div id="tw">
+            <h1>Travel World</h1>
         </div>
-        <div id="content">
-            <div id="tw">
-                <h1>Travel World</h1>
-            </div>
-
-            <?php if ($error): ?>
-                <h3 id="error"><?php echo $error_msg; ?></h3>
-            <?php endif; ?>
-
-             <div id="register-form">
-                <form action="login.php" method="post">
-                    <p id="join">Entrar na Conta</p>
-                    <div class="form-group">
-                        <input type="email" name="email" id="email" value="<?php echo $email; ?>" placeholder="Email">
-                    </div>
-                     <div class="form-group">
-                        <input type="password" name="password" id="password" value="" placeholder="Senha">
-                    <div class="form-group">
-                        <button type="submit" id="btnr">Entrar!</button>
-                    </div>
-                </form>
-                <p id="acess">Não possuí uma conta? <a href="register.php">CLIQUE AQUI!</a></p>
-            </div>
+        <?php if ($error): ?>
+            <h3 id="error"><?php echo $error_msg; ?></h3>
+        <?php endif; ?>
+         <div id="register-form">
+            <form action="login.php" method="post">
+                <h2>Entrar na Conta</h2>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" value="<?php echo $email; ?>" placeholder="Email">
+                </div>
+                 <div class="form-group">
+                    <input type="password" name="password" id="password" value="" placeholder="Senha">
+                <div class="form-group">
+                    <button type="submit" id="btnr">Entrar!</button>
+                </div>
+            </form>
+            <p id="acess">Não possuí uma conta? <a href="register.php">CLIQUE AQUI!</a></p>
         </div>
-    </div>
-    <footer> © Travel World</footer>
+    </main>
+    <footer>© Travel World</footer>
 </body>
 </html>

@@ -11,22 +11,21 @@
   <title>Pagamento</title>
 </head>
 <body>
-  <div id="container">
-    <div id="content">
-      <?php if ($_SERVER["REQUEST_METHOD"] == "POST"): ?>
-        <?php if (!$erro): ?>
-          <div id="dados">
-            <h1>Travel World</h1>
-            <h3>Compra Realizada Com Sucesso.</h1>
-            <p id="firstp">Obrigado <strong><?php echo $firstname . " " . $lastname?>!</strong></p>
-            <p id="secondp">Os dados da compra foram enviados para o email cadastrado <strong><?php echo $email ?></strong></p>
-            <p id="thirdp">Nós da Travel World agradecemos sua compra e desejamos uma ótima viagem!</p>
-          </div>
-        <?php endif; ?>
+  <main>
+    <?php if ($_SERVER["REQUEST_METHOD"] == "POST"): ?>
+      <?php if (!$erro): ?>
+        <section>
+          <h1>Travel World</h1>
+          <h3>Compra Realizada Com Sucesso.</h1>
+          <p id="firstp">Obrigado <strong><?php echo $firstname . " " . $lastname?>!</strong></p>
+          <p id="secondp">Os dados da compra foram enviados para o email cadastrado <strong><?php echo $email ?></strong></p>
+          <p id="thirdp">Nós da Travel World agradecemos sua compra e desejamos uma ótima viagem!</p>
+        </section>
       <?php endif; ?>
-      <a href="index.php" id="btn">Voltar a pagina principal</a>
-      <footer> © Travel World</footer>
-    </div>
-  </div>
+    <?php endif; ?>
+    <a href="index.php" id="btn">Voltar a pagina principal</a>
+    <footer> © Travel World</footer>
+  </main>
 </body>
 </html>
+

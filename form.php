@@ -2,6 +2,7 @@
   require("formcheck.php");
   require_once("./db/db_credentials.php")
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,13 +14,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <title>Formulário</title>
 </head>
-<body class="fundo">
-  <div id="container">
-    <div id="navbar">
-      <a id="header"href="index.php">Página Inicial</a> 
-    </div>
-    <div id="content">
-
+<body>
+  <header>
+    <nav class="navbar">
+        <a id="header"href="index.php">Página Inicial</a> 
+    </nav>
+  </header>
+  <main>
+    <section>
       <?php if ($_SERVER["REQUEST_METHOD"] == "POST"): ?>
           <?php if ($erro): ?>
             <div class="alert alert-danger">
@@ -27,14 +29,13 @@
             </div>
           <?php endif; ?>
         <?php endif; ?>
-
       <h1>Ótima escolha!</h1>
       <h4>Informe seus dados para realizar sua compra</h4>
-      <form id="form" method="POST" action="
+      <form id="form" method="POST" autocomplete="off" action="
       <?php if (!$erro): ?>
-	      checkout.php
+        checkout.php
       <?php else: ?>
-	      form.php
+        form.php
       <?php endif; ?> ">
         <div class="half-box" id="box1" <?php if(!empty($erro_name)){echo "has-error";}?>>
           <label for="name">Nome</label>
@@ -64,8 +65,9 @@
           <button type="submit" id="btn">Pagar</button>
         </div>
       </form>
-    </div>
-  </div>
+    </section>
+  </main>
+  <footer>© Travel World</footer>
   <script src="./js/form.js"></script>
 </body>
 </html>

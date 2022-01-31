@@ -9,7 +9,7 @@ $("#titulo").on({
     }
 })
 
-$("#image1, #image2").click(function() {
+$(".image").click(function() {
     this.requestFullscreen();
     $(this).css("transition", "1s ease")
 })

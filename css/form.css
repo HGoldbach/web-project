@@ -1,99 +1,207 @@
+@import url('https://allfont.net/allfont.css?fonts=agency-fb');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --ff-title: 'Bebas Neue', cursive;
+  --ff: 'agency fb', arial;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
   
   body {
-    background-color: mintcream;
+    background-color: #f5f5f5;
   }
-  
+
+  .navbar {
+    padding: 1rem 0;
+  }
+
   #header {
-    position: fixed;
-    top: 3px;
-    left: 3px;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    font-family: agency fb;
-    text-transform: uppercase;
     text-decoration: none;
+    color: white;
+    margin-left: .5rem;
+    padding: .6rem;
+    background-color: #2D2D2D;
+    font-family: var(--ff);
+    text-transform: uppercase;
+    border-radius: .2rem;
+    box-shadow: 0px 2px 10px #595959;
+    transition: .5s;
   }
+
   
-  #container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  main {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
+    color: white;
   }
-  
-  #content {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 900px;
-    height: auto;
-    border: 2px solid #252424;
-    border-radius: 20px;
-    background-color: #252424;
-    font-family: agency fb;
-    font-size: 20px;
-    font-weight: bold;
-    color: aliceblue;
+
+  section {
+    background-color: #2D2D2D;
+    border-radius: .4rem;
   }
-  
-  
-  
+
   h1, h4 {
+    font-family: var(--ff-title);
     text-align: center;
-    padding: 20px;
-    margin: 20px;
+    margin: 1.25rem 0;
   }
   
   h1 {
-    font-size: 50px;
+    font-size: 5rem;
   }
   
   h4 {
-    font-size: 28px;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
   }
   
+  #form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+  }
+
   .half-box {
     text-align: center;
-    padding: 10px 80px;
+    padding: .6rem 4rem;
     
   }
   
   .half-box label {
+    font-family: var(--ff);
+    font-size: 1.3rem;
+    display: block;
     text-transform: uppercase;
   }
   
-  .half-box #name, #email, #lastname, #phone, #card, #scode {
+  .half-box input {
     text-align: center;
-    font-family: agency fb;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 17px;
-    display: flex;
-    width: 300px;
-    padding: 10px;
+    font-size: 1rem;
+    font-family: var(--ff);
+    width: 18rem;
+    padding: .6rem;
+    outline: none;
   }
-  
-  #box1, #box3, #box5 {
-    float: left;
+
+  .half-box input::placeholder {
+    opacity: .2;
   }
   
   #button {
-    margin: 30px;
-    margin-right: 90px;
-    text-align: right;
-    
+    grid-column: 2/3;
+    margin: 2rem 4rem;
   }
   
   #btn {
-    background-color: aliceblue;
-    padding: 10px 25px;
-    font-family: agency fb;
+    background-color: white;
+    padding: .6rem 1.8rem;
+    font-family: var(--ff);
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 17px;
-  
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  #btn:hover {
+    background-color: rgb(0, 238, 255);
   }
   
+  footer {
+    text-align: center;
+    padding: .8rem;
+    background-color: #2D2D2D;
+    color: aliceblue;
+  }
+
+  @media screen and (max-width: 900px) {
+    h1 {
+      font-size: 4.5rem;
+    }
+    h4 {
+      font-size: 1.3rem;
+    }
+    .half-box {
+      padding: .3rem 2rem;
+    }
+    .half-box label {
+      font-size: 1rem;
+    }
+    .half-box input {
+      font-size: .7rem;
+      width: 16rem;
+    }
+    #button {
+      margin: 2rem 2rem;
+    }
+    #btn {
+      padding: .4rem 1.5rem;
+      font-size: .8rem;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    .half-box {
+      padding: .3rem 1.5rem;
+    }
+    .half-box label {
+      font-size: .8rem;
+    }
+    .half-box input {
+      font-size: .6rem;
+      width: 10rem;
+    }
+    #button {
+      margin: 2rem 1rem;
+    }
+    #btn {
+      padding: .4rem 1.5rem;
+      font-size: .7rem;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    h1 {
+      font-size: 3rem;
+    }
+    h4 {
+      font-size: .8rem;
+    }
+    .half-box {
+      padding: .3rem 8vw;
+    }
+    .half-box input {
+      font-size: .6rem;
+      width: 8rem;
+    }
+    #button {
+      margin: 2rem 8vw;
+    }
+    #btn {
+      padding: .4rem 1.5rem;
+      font-size: .7rem;
+    }
+  }
+
+
+

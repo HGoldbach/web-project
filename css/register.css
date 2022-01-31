@@ -1,65 +1,65 @@
+@import url('https://allfont.net/allfont.css?fonts=agency-fb');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+        --ff-title: 'Bebas Neue', cursive;
+        --ff: 'agency fb', arial;
+  }
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: mintcream;
+    background-color: #f5f5f5;
 }
 
-#container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-#navbar {
-    position: fixed;
-    top: 3px;
-    left: 3px;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    font-family: agency fb;
-    text-transform: uppercase;
+.navbar {
+    padding: 1rem 0;
 }
 
 #header {
-    color: white;
     text-decoration: none;
+    color: white;
+    margin-left: .5rem;
+    padding: .6rem;
+    background-color: #2D2D2D;
+    font-family: var(--ff);
+    text-transform: uppercase;
+    border-radius: .2rem;
+    box-shadow: 0px 2px 10px #595959;
+    transition: .5s;
 }
 
-#content {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    height: auto;
-
-}
-
-#tw {
-    position: absolute;
-    top: 20%;
-    left: -150px;
+main {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 h1 {
-    font-size: 5rem;
-    font-family: agency fb;
+    font-size: 7rem;
+    font-family: var(--ff-title);
     text-transform: uppercase;
-    margin-bottom: 5%;
-    text-decoration: underline;
-    text-align: center;
 }
 
-#join {
-    font-size: 1.5rem;
-    font-family: agency fb;
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20vw;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: var(--ff-title);
     text-transform: uppercase;
-    margin-bottom: 5%;
-    text-decoration: underline;
-    font-weight: 1000;
-    text-align: center;
+    
 }
 
 #acess {
@@ -69,17 +69,9 @@ h1 {
     margin-top: 5%;
     margin-bottom: 5%;
     text-decoration: underline;
-    font-weight: 1000;
+    
     text-align: center; 
-}
-
-#register-form {
-    float: right;
-    border-left: 2px solid black;
-    padding: 30px 0;
-    padding-left: 100px;
-    text-align: center;
-    margin-top: 0px;
+    
 }
 
 .form-group {
@@ -89,18 +81,17 @@ h1 {
 input, button {
     padding: 7px;
     width: 280px;
+    outline: none;
 }
 
 #error {
-    position: absolute;
-    top: -15px;
-    left: 67%;
-    color: #f18e8e;
+    color: #fd1c1c;
     background-color: #2D2D2D;
-    padding: 5px;
+    padding: .5rem;
     font-family: agency fb;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 1.5rem;
+    border-radius: .2rem;
 }
 
 #suc1, #suc2 {
@@ -122,13 +113,16 @@ input, button {
 
 #suc2 a {
     color: #58ff49;
+    transition: .5s;
+}
+
+#suc2 a:hover {
+    color: rgb(204, 248, 115);
 }
 
 footer {
-    position: relative;
-    top: 1030px;
     text-align: center;
+    padding: .8rem;
     background-color: #2D2D2D;
     color: aliceblue;
-    padding: 15px 0;
 }
