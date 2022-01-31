@@ -43,34 +43,40 @@
         <h2 id="title2">Alguns de nossos destinos paradisíacos</h2>
         <section class="destinos">
             <div class="local ibiza">
-                <h2>Ibiza</h2> 
                 <img src="images/ibiza.jpg">
+                <h3>Ibiza</h3> 
                 <p>
                     Localizada ao leste da Espanha, Ibiza é uma ilha do arquipélago
                     das Ilhas Baleares e sua maior cidade também se chama Ibiza,
                     um dos destinos mais animados da Espanha.
                 </p>
-                <a class="dm" href="ibiza.php">Descobrir mais</a>
+                <button class="dm">
+                    <a href="ibiza.php">Descobrir mais</a>
+                </button>
             </div>
             <div class="local maldivas">
-                <h2>Maldivas</h2>
                 <img  src="images/maldivashome2.jpg">
+                <h3>Maldivas</h3>
                 <p>
                     As Ilhas Maldivas são um arquipélago de 1.196 ilhas
                     espalhadas pelo Oceano Índico, sendo 203 delas habitadas.
                     Sua localização é ao Sul da Índia, em territorio asiatico. 
                 </p>
-                <a class="dm" href="maldivas.php">Descobrir mais</a>
+                <button class="dm">
+                    <a href="maldivas.php">Descobrir mais</a>
+                </button>
             </div>
             <div class="local cancun">
-                <h2>Cancun</h2>
                 <img src="images/cancun2.jpg">
+                <h3>Cancun</h3>
                 <p>
                     Cancún é um dos destinos mais famosos do México, com opções
                     de lazer e descanso para todas as idades, com inúmeras opções
                     de diversão, cultura e badalação.
                 </p>
-                <a class="dm" href="cancun.php">Descobrir mais</a>
+                <button class="dm">
+                    <a href="cancun.php">Descobrir mais</a>
+                </button>
             </div>
         </section>
     </main>
@@ -78,3 +84,4 @@
     <script src="./js/index.js"></script>
 </body>
 </html>
+
